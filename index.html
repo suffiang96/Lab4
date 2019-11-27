@@ -1,0 +1,45 @@
+<!-- Thanks to https://github.com/mapbox/leaflet-omnivore for the plugin-->
+<!DOCTYPE html>
+<html>
+<title> Real-Time Data </title>
+	<head>
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+    <link rel="stylesheet" type="text/css"  href="styles.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+      <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+	</head>
+
+	<body>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='mapbox-gl-geocoder.css' type='text/css'/>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+
+    <h1> Real-time earthquakes </h1>
+			<div id='mapOne'></div>
+      <script src="scripts.js"></script>
+      <br>
+      <p>
+      The above map displays all earthquakes that have occurred in the last 24 hours. This map is updated every minute to provide the most recent data. Clicking on a specific earthquake will give information about its location amd magnitude as well as a link to view futher details about that quake.  More earthquake information available from the <a href="https://earthquake.usgs.gov/" target="_blank"> USGS Earthquake Hazards Program</a>. Data was retrieved from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank"> here</a>.
+      </p>
+      <br>
+      <br>
+
+
+    <h1> Stream flow conditions </h1>
+      <div id='mapTwo'></div>
+      <script src="scripts.js"></script>
+        <p>A static map showing stream flow conditions throughout the Pacific Northwest. </p>
+
+	</body>
+</html>
