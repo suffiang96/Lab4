@@ -99,7 +99,7 @@ mapB.on('click', 'other', function (b) {
       var coordinatesB = b.features[0].geometry.coordinates;
       //2. create the information that will display in the popup
       var descriptionB = "<h3>" + b.features[0].properties.title + "</h3>"
-      + "<br> For more info about this quake, visit " + "<a href=" + b.features[0].properties.url +  ">" + "here </a> </p>";
+      + "<br> For more info about this quake, visit " + "<a href=" + b.features[0].properties.url +  ">"+ "here </a> </p>";
       // make the popup
       new mapboxgl.Popup()
               .setLngLat(coordinatesB)
