@@ -4,12 +4,13 @@ body {
   margin-right: 10%;
   margin-top: 5%;
   margin-bottom: 5%;
+  font-family: Lucida Sans;
 }
 
 
-#mapOne { height: 100vh;
+#mapOne { height: 85vh;
         width: 100%;
       }
-#mapTwo { height: 100vh;
+#mapTwo { height: 85vh;
         width: 100%;
       }

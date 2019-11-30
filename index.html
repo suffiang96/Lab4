@@ -19,27 +19,29 @@
 
 	<body>
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
-    <link rel='stylesheet' href='mapbox-gl-geocoder.css' type='text/css'/>
+		<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
+		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 
-
-    <h1> Real-time earthquakes </h1>
+<h1> Earthquakes that have occurred in... </h1>
+    <h2> ...the last 24 hours </h2>
 			<div id='mapOne'></div>
       <script src="scripts.js"></script>
       <br>
       <p>
-      The above map displays all earthquakes that have occurred in the last 24 hours. This map is updated every minute to provide the most recent data. Clicking on a specific earthquake will give information about its location amd magnitude as well as a link to view futher details about that quake.  More earthquake information available from the <a href="https://earthquake.usgs.gov/" target="_blank"> USGS Earthquake Hazards Program</a>. Data was retrieved from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank"> here</a>.
+      The above map displays all earthquakes that have occurred in the last 24 hours. This map is updated every minute to provide the most recent data. These earthquakes have been symbolized according to their magnitude. Earthquakes with higher magnitudes are shown as larger cirlcles while lower magnitude earthquaes are inducated by smaller circles. Clicking on a specific earthquake will give information about its location amd magnitude as well as a link to view futher details about that quake.  More earthquake information available from the <a href="https://earthquake.usgs.gov/" target="_blank"> USGS Earthquake Hazards Program</a>. Data was retrieved from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank"> here</a>.
       </p>
       <br>
       <br>
 
 
-    <h1> Stream flow conditions </h1>
+    <h2> ...the last 7 days </h2>
       <div id='mapTwo'></div>
       <script src="scripts.js"></script>
-        <p>A static map showing stream flow conditions throughout the Pacific Northwest. </p>
+        <p>All earthquakes that have occurred in the last week. Because this map includes many more earthquakes, the quakes are symbolized by color insead of style. The green hues indicate lower magnitudes while the more red hues indicate a higher magnitude. Clicking on a specific earthquake will give information about its location amd magnitude as well as a link to view futher details about that quake.  More earthquake information available from the <a href="https://earthquake.usgs.gov/" target="_blank"> USGS Earthquake Hazards Program</a>. Data was retrieved from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="_blank"> here</a>.
+
+			 </p>
 
 	</body>
 </html>
